@@ -1,15 +1,171 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Webmag</title>
-   <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bien-Être Magazine</title>
+ <style>
+ body {
+   margin: 0;
+   font-family: Arial, sans-serif;
+   line-height: 1.6;
+   color: #333;
+ }
+ header {
+   background: white;
+   padding: 10px 20px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   border-bottom: 1px solid #ddd;
+ }
+ header h1 {
+   font-size: 1.5rem;
+   font-weight: bold;
+ }
+ nav ul {
+   list-style: none;
+   display: flex;
+   gap: 15px;
+   margin: 0;
+   padding: 0;
+ }
+ nav a {
+   text-decoration: none;
+   color: #333;
+   font-weight: bold;
+ }
+ .cta-button {
+   background: purple;
+   color: white;
+   padding: 10px 20px;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+ }
+ .intro {
+   text-align: center;
+   background: purple;
+   color: white;
+   padding: 30px 15px;
+ }
+ .intro h2 {
+   font-size: 2rem;
+   margin-bottom: 10px;
+ }
+ .themes-container {
+   display: flex;
+   justify-content: space-around;
+   padding: 20px;
+   background: purple;
+   color: white;
+   gap: 20px;
+ }
+ .theme {
+   text-align: center;
+ }
+ #article-principal {
+   padding: 20px;
+   text-align: center;
+ }
+ #article-principal img {
+   width: 100%;
+   max-width: 600px;
+   border-radius: 10px;
+   margin-bottom: 10px;
+ }
+ .articles-containers {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+   gap: 20px;
+   padding: 20px;
+ }
+ .article-principal {
+   border: 1px solid #ddd;
+   border-radius: 10px;
+   padding: 15px;
+   background: #F9F9F9;
+ }
+ .article-principal img {
+   width: 100%;
+   border-radius: 5px;
+ }
+ .article-button a {
+   text-decoration: none;
+   color: white;
+   background: purple;
+   padding: 10px 15px;
+   border-radius: 5px;
+   display: inline-block;
+   margin-top: 10px;
+ }
+ #notre-equipe {
+   text-align: center;
+   padding: 20px;
+ }
+ .auteurs-container {
+   display: flex;
+   justify-content: center;
+   gap: 20px;
+   padding: 20px;
+ }
+ .auteur {
+   text-align: center;
+ }
+ .auteur img {
+   width: 100px;
+   height: 100px;
+   border-radius: 50%;
+   margin-bottom: 10px;
+ }
+ footer {
+   text-align: center;
+   padding: 10px;
+   background: #F1F1F1;
+   font-size: 0.9rem;
+   border-top: 1px solid #ddd;
+ }
+
+</style>
 </head>
 <body>
-   <!-- Début HTML -->
-
-   <!-- Fin HTML -->
-   <script src="script.js"></script>
+  <header>
+    <div class="header-container">
+      <h1 id="nom-journal">Bien-Être Magazine</h1>
+      <nav>
+        <ul>
+          <li><a href="#themes-section">Thèmes</a></li>
+          <li><a href="#article-principal">Article Principal</a></li>
+          <li><a href="#autres-articles">Autres Articles</a></li>
+          <li><a href="#notre-equipe">Notre Équipe</a></li>
+        </ul>
+      </nav>
+      <button class="cta-button">S'abonner</button>
+    </div>
+  </header>
+  <section class="intro">
+    <h2 id="phrase-accroche">Votre source d'inspiration pour une vie équilibrée et harmonieuse</h2>
+    <p id="texte-appel-action">Inscrivez-vous pour recevoir des conseils exclusifs sur le bien-être</p>
+  </section>
+  <section id="themes-section" class="themes">
+    <h2>Thèmes</h2>
+    <div class="themes-container"></div>
+  </section>
+  <section id="article-principal">
+  </section>
+  <section id="autres-articles">
+    <h2>Autres Articles</h2>
+    <div class="articles-containers">
+    </div>
+  </section>
+  <section id="notre-equipe">
+    <h2>Découvrez Notre Équipe</h2>
+    <div class="auteurs-container">
+    </div>
+  </section>
+  <footer>
+    <p>© Bien-Être Magazine 2024</p>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
